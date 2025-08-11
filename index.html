@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Free online QR code scanner. Upload images containing QR codes and decode them instantly." />
+  <meta name="keywords" content="QR code, scanner, decoder, online, free, image upload" />
+  <meta name="author" content="QR Code Scanner" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:title" content="QR Code Scanner - Free Online Tool" />
+  <meta property="og:description" content="Scan QR codes from images instantly. Free, secure, and easy to use." />
+  <meta property="og:image" content="https://your-domain.com/og-image.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://your-domain.com/" />
+  <meta property="twitter:title" content="QR Code Scanner - Free Online Tool" />
+  <meta property="twitter:description" content="Scan QR codes from images instantly. Free, secure, and easy to use." />
+  <meta property="twitter:image" content="https://your-domain.com/og-image.png" />
+  
+  <title>QR Code Scanner - Free Online Tool</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js" as="script">
+  
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Security headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+</head>
+<body>
+  <div class="container">
+    <h1>📱 QR Code Scanner</h1>
+    <p style="margin-bottom: 20px; color: #666;">Upload an image containing a QR code to scan and decode it instantly</p>
+    
+    <input type="file" id="fileInput" accept="image/*" />
+    
+    <canvas id="qrCanvas" style="display:none;"></canvas>
+    <div id="result"></div>
+    
+    <footer style="margin-top: 30px; font-size: 0.9rem; color: #888;">
+      <p>🔒 Your images are processed locally - nothing is uploaded to our servers</p>
+      <p>Supports: JPEG, PNG, GIF, WebP (max 10MB)</p>
+    </footer>
+  </div>
+
+  <!-- jsQR library -->
+  <script src="https://cdn.jsdelivr.net/npm/jsqr/dist/jsQR.js" integrity="sha384-..." crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  
+  <!-- Service Worker for PWA capabilities (optional) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => console.log('SW registered'))
+          .catch(registrationError => console.log('SW registration failed'));
+      });
+    }
+  </script>
+</body>
+</html>
