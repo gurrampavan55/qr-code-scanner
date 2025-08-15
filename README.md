@@ -22,7 +22,7 @@ A modern, responsive web application for scanning QR codes from images. Built wi
 
 - Modern web browser with JavaScript enabled
 - No server or backend required
-- No dependencies to install
+- No dependencies to install..
 
 ## 🛠️ Installation
 
