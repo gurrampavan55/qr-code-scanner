@@ -43,7 +43,7 @@ npx http-server
 php -S localhost:8000
 ```
 
-Then visit `http://localhost:8000` in your browser.
+Then visit `http://localhost:8000` in your browser..
 
 ## 📁 Project Structure
 
