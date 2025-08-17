@@ -4,7 +4,7 @@ A modern, responsive web application for scanning QR codes from images. Built wi
 
 ## ✨ Features
 
-- **🔍 QR Code Detection**: Scan QR codes from uploaded images
+- **🔍 QR Code Detection**: Scan QR codes from uploaded images.
 - **📱 Responsive Design**: Works perfectly on desktop, tablet, and mobile
 - **🔄 Drag & Drop**: Simply drag and drop images to scan
 - **🔒 Privacy First**: All processing happens locally - no data uploaded to servers
