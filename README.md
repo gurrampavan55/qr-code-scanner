@@ -131,7 +131,7 @@ The app includes Progressive Web App capabilities:
 - Check that the QR code is not too small or blurry
 
 ### File Upload Issues
-- Maximum file size: 10MB
+- Maximum file size: 10MB..
 - Supported formats: JPEG, PNG, GIF, WebP
 - Try refreshing the page if issues persist
 
